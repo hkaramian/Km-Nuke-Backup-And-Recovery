@@ -1,6 +1,6 @@
 # Km Nuke Backup And Recovery
 
-Notice : current version support Nuke 12 and older , But not Nuke 13 . I will update it for supoort nuke 13 ASAP I can ! 
+Notice : current version support Nuke 12 and older , But not Nuke 13 . I will update it for support nuke 13 ASAP I can ! 
 
 ## What is Km Backup And Recovery Toolkit ?
 It’s a tool(script) for Nuke that every time user saves the project, create backups from project file in one or two different locations.
@@ -16,7 +16,7 @@ Sometimes Nuke project files are corrupted and there’s no way to get it back. 
 
 ## More info : 
 
-For more information reade the UserGuide.pdf or UserGuide.txt file
+For more information reade the UserGuide.pdf file
 
 <a href="http://www.nukepedia.com/python/misc/nuke-backup-and-recovery-toolkit" target="_blank">More info - NukePedia</a>
 
