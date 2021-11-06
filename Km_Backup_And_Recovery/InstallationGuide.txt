@@ -1,0 +1,26 @@
+Km Backup And Recovery Toolkit Installation Guide
+-----------------------------------------------------------------
+
+1. Copy 'Km Backup And Recovery' folder to nuke plugin path
+
+2. Add following code to iniy.py file in the nuke plugin path :
+
+nuke.pluginAddPath('./Km_Backup_And_Recovery')
+
+see User Guide pdf file for more description
+
+# # # # # # # # # # # # # # # # # # # # # # 
+
+# Km Backup And Recovery Toolkit v1.0     #
+
+# Developed By Hossein Karamian           #
+
+# www.kmworks.ir                          #
+
+# 10/6/2020                               #
+              _  __  __  __ 
+#            | |/ / |  \/  |              #
+             | ' /  | \  / |                       
+#            |  <   | |\/| |              #
+             |_|\_\ |_|  |_|              
+# # # # # # # # # # # # # # # # # # # # # #

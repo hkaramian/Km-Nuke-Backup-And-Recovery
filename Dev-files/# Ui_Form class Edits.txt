@@ -1,0 +1,11 @@
+# Ui_Form class Edits :
+# for replace : os.path.dirname(__file__)+"/icons/
+# replace "../../RimiyaFx Plugin Pack/Km_Backup_And_Recovery/icons/ with os.path.dirname(__file__)+"/icons/
+# remove all : QtCore.  , QtGui.   , QtWidgets.
+#
+#
+#
+#
+#
+#
+#

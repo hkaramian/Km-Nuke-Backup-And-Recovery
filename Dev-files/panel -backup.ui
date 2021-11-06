@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>918</width>
+    <height>831</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Km Backup And Recovery</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>C:/Users/Km/RimiyaFx Plugin Pack/Km_Backup_And_Recovery/icons/backup_on.png</normaloff>C:/Users/Km/RimiyaFx Plugin Pack/Km_Backup_And_Recovery/icons/backup_on.png</iconset>
+  </property>
+  <widget class="QGroupBox" name="groupBox_status">
+   <property name="geometry">
+    <rect>
+     <x>190</x>
+     <y>10</y>
+     <width>441</width>
+     <height>111</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Status</string>
+   </property>
+   <widget class="QComboBox" name="comboBox_backup_service_status">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>30</y>
+      <width>71</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Enable</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Disable</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label_backup_service_status">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>111</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Backup Service :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_icon">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>20</y>
+      <width>61</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>C:/Users/Km/RimiyaFx Plugin Pack/Km_Backup_And_Recovery/icons/backup_on.png</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_add_to_pane">
+    <property name="geometry">
+     <rect>
+      <x>170</x>
+      <y>70</y>
+      <width>111</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="toolTip">
+     <string>Add this panel to nuke static panels </string>
+    </property>
+    <property name="text">
+     <string>Add Panel To Pane</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_settings4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>130</y>
+     <width>801</width>
+     <height>171</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Settings</string>
+   </property>
+   <widget class="QPushButton" name="pushButton_select_secondary_backup_directory">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>100</y>
+      <width>41</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>...</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="lineEdit_secondary_backup_path">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>100</y>
+      <width>281</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>C:\Nuke_Backups\</string>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_in_script_folder_service">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>70</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Local (In Script Folder) Backup</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_scheduling">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Scheduling :</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="comboBox_scheduling">
+    <property name="geometry">
+     <rect>
+      <x>460</x>
+      <y>20</y>
+      <width>191</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>Keep one version per hour</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>Keep one version per day</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>50</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_secondary_backup_service">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>70</y>
+      <width>261</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Secondary Backup (same location for all projects)</string>
+    </property>
+    <property name="checked">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>130</x>
+      <y>120</y>
+      <width>171</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Local Backup Folder</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_open_secondary_backup_directory">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>510</x>
+      <y>130</y>
+      <width>221</width>
+      <height>23</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Open Secondary Backup Folder</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>50</y>
+      <width>341</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_daily_backup">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>20</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Local (In Script Folder) Backup</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QCheckBox" name="checkBox_hourly_backup">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>171</width>
+      <height>17</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>50</weight>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Local (In Script Folder) Backup</string>
+    </property>
+    <property name="checked">
+     <bool>true</bool>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="groupBox_backups_list">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>310</y>
+     <width>871</width>
+     <height>471</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Backups</string>
+   </property>
+   <widget class="QTableWidget" name="tableWidget_backups_list">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>781</width>
+      <height>391</height>
+     </rect>
+    </property>
+    <row>
+     <property name="text">
+      <string>1</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>2</string>
+     </property>
+    </row>
+    <row>
+     <property name="text">
+      <string>3</string>
+     </property>
+    </row>
+    <column>
+     <property name="text">
+      <string>FileName</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Recover</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Delete</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>Copy url to clipboard</string>
+     </property>
+    </column>
+    <item row="0" column="0">
+     <property name="text">
+      <string>Dessert_shot_001_7-27-2020_11AM</string>
+     </property>
+    </item>
+    <item row="0" column="1">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="0" column="2">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="0" column="3">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="1" column="0">
+     <property name="text">
+      <string>Dessert_shot_001_7-27-2020_12PM</string>
+     </property>
+    </item>
+    <item row="1" column="1">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="1" column="2">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="1" column="3">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="2" column="0">
+     <property name="text">
+      <string>Dessert_shot_001_7-27-2020_13PM</string>
+     </property>
+    </item>
+    <item row="2" column="1">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="2" column="2">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+    <item row="2" column="3">
+     <property name="text">
+      <string>Do It</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>731</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QLabel" name="label_backups_list_filter">
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Filter :</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label">
+       <property name="text">
+        <string>Type</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_backups_list_filter_type">
+       <item>
+        <property name="text">
+         <string>Local</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Secondary Backup</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="label_filter_time">
+       <property name="text">
+        <string>Time</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBox_backups_list_filter">
+       <item>
+        <property name="text">
+         <string>All</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Today</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Last 7 Days</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Last Mounth</string>
+        </property>
+       </item>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButton_refresh">
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>C:/Users/Km/RimiyaFx Plugin Pack/Km_Backup_And_Recovery/icons/refresh.png</normaloff>C:/Users/Km/RimiyaFx Plugin Pack/Km_Backup_And_Recovery/icons/refresh.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+  <widget class="QLabel" name="label_plugins_version">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>790</y>
+     <width>181</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Km Backup &amp; Recovery v1.0</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_8">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>790</y>
+     <width>131</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>By Hossein Karamian</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_9">
+   <property name="geometry">
+    <rect>
+     <x>720</x>
+     <y>800</y>
+     <width>101</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>www.kmworks.ir</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
